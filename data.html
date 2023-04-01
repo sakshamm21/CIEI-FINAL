@@ -225,6 +225,17 @@
 <script>
     var ID;
 
+    var basicpolicestatistics = {
+        "- - - - SELECT - - - -": "101",
+        " STATE/UTs wise population per police person sanctioned ": "102",
+        " STATE/UTs wise total police per lakh of population sanctioned ": "103",
+        " STATE/UTs wise area in Sq. Kms. per police person sanctioned ": "104", 
+        " STATE/UTs wise transport facility per 100 police personnel sanctioned and actual ": "105",
+        " AREA AND POPULATION OF STATES/UTs POLICE STRENGTH, POPULATION PER POLICE PERSON, AREA PER POLICE PERSON & TRANSPORT PER 100 POLICE PERSONNEL ": "106",
+        "SANCTIONED AND ACTUAL POLICE -- POPULATION AND AREA RATIO IN STATES/UTs ": "107",
+
+    }
+
     var humanresources = {
         "- - - - SELECT - - - -": "201",
         "State/UTs wise officer to field staff ratio": "202",
@@ -348,6 +359,59 @@
         }
     });
     var S;
+    $("#my_select2").change(function () {
+        S = $(this).children(":selected").attr("value");
+        console.log(S);
+        if(S==102){
+            document.getElementById('image').src="./images/ps1.png";
+        }
+    });
+    $("#my_select2").change(function () {
+        S = $(this).children(":selected").attr("value");
+        console.log(S);
+        if(S==103){
+            document.getElementById('image').src="./images/ps6.png";
+        }
+    });
+    $("#my_select2").change(function () {
+        S = $(this).children(":selected").attr("value");
+        console.log(S);
+        if(S==104){
+            document.getElementById('image').src="./images/ps2.png";
+        }
+    });
+    $("#my_select2").change(function () {
+        S = $(this).children(":selected").attr("value");
+        console.log(S);
+        if(S==105){
+            document.getElementById('image').src="./images/ps3.png";
+        }
+    });
+    $("#my_select2").change(function () {
+        S = $(this).children(":selected").attr("value");
+        console.log(S);
+        if(S==106){
+            document.getElementById('image1').src="./images/ps4-1.png";
+            document.getElementById('image2').src="./images/ps4-2.png";
+        }
+    });
+    $("#my_select2").change(function () {
+        S = $(this).children(":selected").attr("value");
+        console.log(S);
+        if(S==107){
+            document.getElementById('image').src="./images/ps5.png";
+        }
+    });
+
+
+
+
+
+
+
+
+
+
     $("#my_select2").change(function () {
         S = $(this).children(":selected").attr("value");
         console.log(S);
